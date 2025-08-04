@@ -1,0 +1,41 @@
+{
+  "name": "parcel-bundler-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/plugin-transform-runtime": "^7.28.0",
+    "autoprefixer": "^9.8.8",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "2.6.0",
+    "postcss": "^8.5.6"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "build": "^0.1.4"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "static",
+        "staticOutDir": "."
+      },
+      {
+        "staticPath": "src/images",
+        "staticOutDir": "images"
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
